@@ -13,7 +13,7 @@ class Playfield:
         self._playfield = [[None] * cols for _ in range(rows)]
         self._column_height = [-1] * cols
 
-    def toarray(self):
+    def toarray(self) -> [[bool]]:
         return self._playfield
 
     @property
@@ -43,7 +43,7 @@ class Playfield:
             resting_row = max(resting_row, collision_height)
             #print(f'col_height: {collision_height} resting_row: {resting_row}')
         #print('resting_row:', resting_row)
-        A = piece.toarray
+        A = piece.toarray()
 
         for i, prow in enumerate(A):
             for j, pcol in enumerate(prow):

@@ -13,7 +13,7 @@ class Renderer:
         A = pf.toarray()
         side_len = 10
         dwg = svgwrite.Drawing()
-        dwg.viewbox(0,0,300,450)
+        dwg.viewbox(0,0,300,250)
 
         height = len(A)
         width = len(A[0])
@@ -32,4 +32,22 @@ class Renderer:
                     stroke, fill = '#112543', '#d1eaf3'
                     corner_radius = 1
                 dwg.add(dwg.rect(left_top, width_height, stroke=stroke, fill=fill, rx=corner_radius, ry=corner_radius))
+        return SVG(dwg.tostring())
+
+    def piece_to_svg(self, piece: Piece) -> SVG:
+        side_len = 10
+        dwg = svgwrite.Drawing()
+        dwg.viewbox(0,0,300,50)
+
+        A = piece.toarray()
+        height = len(A)
+        width = len(A[0])
+
+        for row in range(height):
+            for col in range(width):
+                left_top = (col*side_len, (height-row)*side_len)
+                width_height = (side_len, side_len)
+                fill = 'blue' if A[row][col] else 'white'
+                stroke = '#112543'
+                dwg.add(dwg.rect(left_top, width_height, fill=fill, stroke=stroke))
         return SVG(dwg.tostring())

@@ -5,6 +5,7 @@ __all__ = ['Controller']
 # Cell
 from .playfield import Playfield
 from .piece_loader import PieceLoader
+from .renderer import Renderer
 
 try: from nbdev.imports import IN_NOTEBOOK
 except: IN_NOTEBOOK=False
@@ -13,13 +14,13 @@ if IN_NOTEBOOK:
     from IPython.display import display
 
 class Controller:
-    def process(self, line:str) -> Playfield:
+    def process(self, line: str, rndr: Renderer=None) -> Playfield:
         pf = Playfield()
         loader = PieceLoader()
         for instr in line.split(','):
             shape, col = instr[0].lower(), int(instr[1])
             cleared_lines = pf.add_with_clear(loader.pieces[shape], col)
-            if IN_NOTEBOOK:
-                display(pf)
+            if IN_NOTEBOOK and rndr:
+                display(rndr.playfield_to_svg(pf))
             #print(f'cleared {cleared_lines} lines')
         return pf
