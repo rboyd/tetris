@@ -5,16 +5,16 @@ __all__ = ['Controller']
 # Cell
 from .playfield import Playfield
 from .piece_loader import PieceLoader
-from .renderer import Renderer
 
 try: from nbdev.imports import IN_NOTEBOOK
 except: IN_NOTEBOOK=False
 
 if IN_NOTEBOOK:
     from IPython.display import display
+    from .renderer import Renderer
 
 class Controller:
-    def process(self, line: str, rndr: Renderer=None) -> Playfield:
+    def process(self, line: str, rndr=None) -> Playfield:
         pf = Playfield()
         loader = PieceLoader()
         for instr in line.split(','):
