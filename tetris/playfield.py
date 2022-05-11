@@ -6,18 +6,16 @@ __all__ = ['Playfield']
 from math import inf
 from .piece import Piece
 
-try: from nbdev.imports import IN_NOTEBOOK
-except: IN_NOTEBOOK=False
-
-if IN_NOTEBOOK:
-    import svgwrite
-
 class Playfield:
     def __init__(self, rows:int = 20, cols:int = 10):
         self._rows = rows
         self._cols = cols
         self._playfield = [[None] * cols for _ in range(rows)]
         self._column_height = [-1] * cols
+
+    def toarray(self):
+        return self._playfield
+
     @property
     def col_height(self):
         return self._column_height
@@ -75,19 +73,3 @@ class Playfield:
         "Adds a piece at [col] and potentially clears any effected rows."
         resting_row = self.add(piece, col)
         return self.clear(resting_row, piece.height)
-
-    def _repr_svg_(self) -> str:
-        if not IN_NOTEBOOK:
-            return
-
-        side_len = 10
-        dwg = svgwrite.Drawing()
-        dwg.viewbox(0,0,800,450)
-
-        for row in range(self._rows):
-            for col in range(self._cols):
-                left_top = (col*side_len, (self._rows-row)*side_len)
-                width_height = (side_len, side_len)
-                fill = 'black' if not self._playfield[row][col] else 'blue'
-                dwg.add(dwg.rect(left_top, width_height, stroke='white', fill=fill))
-        return dwg.tostring()

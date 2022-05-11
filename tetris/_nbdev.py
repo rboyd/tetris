@@ -6,13 +6,15 @@ index = {"process_stdin": "00_core.ipynb",
          "Piece": "01_piece.ipynb",
          "Playfield": "02_playfield.ipynb",
          "PieceLoader": "03_piece_loader.ipynb",
-         "Controller": "04_controller.ipynb"}
+         "Controller": "04_controller.ipynb",
+         "Renderer": "05_renderer.ipynb"}
 
 modules = ["core.py",
            "piece.py",
            "playfield.py",
            "piece_loader.py",
-           "controller.py"]
+           "controller.py",
+           "renderer.py"]
 
 doc_url = "https://rboyd.github.io/tetris/"
 

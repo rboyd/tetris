@@ -29,6 +29,102 @@ nb_path: "index.ipynb"
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pip</span> install nbdev
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Requirement already satisfied: nbdev in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (1.2.8)
+Requirement already satisfied: ipykernel in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (6.2.0)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.9/site-packages (from nbdev) (6.0)
+Requirement already satisfied: jupyter in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (1.0.0)
+Requirement already satisfied: pip in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (21.1.3)
+Requirement already satisfied: packaging in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (21.0)
+Requirement already satisfied: jupyter-client&lt;8 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (6.1.12)
+Requirement already satisfied: nbconvert&gt;=6.1 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (6.1.0)
+Requirement already satisfied: Jinja2&lt;3.1.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (3.0.1)
+Requirement already satisfied: fastrelease in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (0.1.16)
+Requirement already satisfied: fastcore&gt;=1.4.1 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (1.4.2)
+Requirement already satisfied: ghapi in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (0.1.20)
+Requirement already satisfied: nbformat&gt;=4.4.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbdev) (5.1.3)
+Requirement already satisfied: MarkupSafe&gt;=2.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from Jinja2&lt;3.1.0-&gt;nbdev) (2.0.1)
+Requirement already satisfied: traitlets in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jupyter-client&lt;8-&gt;nbdev) (5.0.5)
+Requirement already satisfied: jupyter_core&gt;=4.6.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jupyter-client&lt;8-&gt;nbdev) (4.7.1)
+Requirement already satisfied: pyzmq&gt;=13 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jupyter-client&lt;8-&gt;nbdev) (22.2.1)
+Requirement already satisfied: python-dateutil&gt;=2.1 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jupyter-client&lt;8-&gt;nbdev) (2.8.2)
+Requirement already satisfied: tornado&gt;=4.1 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jupyter-client&lt;8-&gt;nbdev) (6.1)
+Requirement already satisfied: mistune&lt;2,&gt;=0.8.1 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbconvert&gt;=6.1-&gt;nbdev) (0.8.4)
+Requirement already satisfied: pygments&gt;=2.4.1 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbconvert&gt;=6.1-&gt;nbdev) (2.10.0)
+Requirement already satisfied: jupyterlab_pygments in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbconvert&gt;=6.1-&gt;nbdev) (0.1.2)
+Requirement already satisfied: entrypoints&gt;=0.2.2 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbconvert&gt;=6.1-&gt;nbdev) (0.3)
+Requirement already satisfied: bleach in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbconvert&gt;=6.1-&gt;nbdev) (4.0.0)
+Requirement already satisfied: pandocfilters&gt;=1.4.1 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbconvert&gt;=6.1-&gt;nbdev) (1.4.3)
+Requirement already satisfied: testpath in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbconvert&gt;=6.1-&gt;nbdev) (0.5.0)
+Requirement already satisfied: defusedxml in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbconvert&gt;=6.1-&gt;nbdev) (0.7.1)
+Requirement already satisfied: nbclient&lt;0.6.0,&gt;=0.5.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbconvert&gt;=6.1-&gt;nbdev) (0.5.4)
+Requirement already satisfied: nest-asyncio in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbclient&lt;0.6.0,&gt;=0.5.0-&gt;nbconvert&gt;=6.1-&gt;nbdev) (1.5.1)
+Requirement already satisfied: ipython_genutils in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbformat&gt;=4.4.0-&gt;nbdev) (0.2.0)
+Requirement already satisfied: jsonschema!=2.5.0,&gt;=2.4 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from nbformat&gt;=4.4.0-&gt;nbdev) (3.2.0)
+Requirement already satisfied: setuptools in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.4.0-&gt;nbdev) (57.0.0)
+Requirement already satisfied: attrs&gt;=17.4.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.4.0-&gt;nbdev) (21.2.0)
+Requirement already satisfied: six&gt;=1.11.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.4.0-&gt;nbdev) (1.16.0)
+Requirement already satisfied: pyrsistent&gt;=0.14.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.4.0-&gt;nbdev) (0.18.0)
+Requirement already satisfied: webencodings in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from bleach-&gt;nbconvert&gt;=6.1-&gt;nbdev) (0.5.1)
+Requirement already satisfied: ipython&lt;8.0,&gt;=7.23.1 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from ipykernel-&gt;nbdev) (7.26.0)
+Requirement already satisfied: matplotlib-inline&lt;0.2.0,&gt;=0.1.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from ipykernel-&gt;nbdev) (0.1.2)
+Requirement already satisfied: appnope in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from ipykernel-&gt;nbdev) (0.1.2)
+Requirement already satisfied: debugpy&lt;2.0,&gt;=1.0.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from ipykernel-&gt;nbdev) (1.4.1)
+Requirement already satisfied: jedi&gt;=0.16 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from ipython&lt;8.0,&gt;=7.23.1-&gt;ipykernel-&gt;nbdev) (0.18.0)
+Requirement already satisfied: decorator in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from ipython&lt;8.0,&gt;=7.23.1-&gt;ipykernel-&gt;nbdev) (5.0.9)
+Requirement already satisfied: pickleshare in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from ipython&lt;8.0,&gt;=7.23.1-&gt;ipykernel-&gt;nbdev) (0.7.5)
+Requirement already satisfied: prompt_toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from ipython&lt;8.0,&gt;=7.23.1-&gt;ipykernel-&gt;nbdev) (3.0.19)
+Requirement already satisfied: backcall in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from ipython&lt;8.0,&gt;=7.23.1-&gt;ipykernel-&gt;nbdev) (0.2.0)
+Requirement already satisfied: pexpect&gt;4.3 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from ipython&lt;8.0,&gt;=7.23.1-&gt;ipykernel-&gt;nbdev) (4.8.0)
+Requirement already satisfied: parso&lt;0.9.0,&gt;=0.8.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jedi&gt;=0.16-&gt;ipython&lt;8.0,&gt;=7.23.1-&gt;ipykernel-&gt;nbdev) (0.8.2)
+Requirement already satisfied: ptyprocess&gt;=0.5 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from pexpect&gt;4.3-&gt;ipython&lt;8.0,&gt;=7.23.1-&gt;ipykernel-&gt;nbdev) (0.7.0)
+Requirement already satisfied: wcwidth in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from prompt_toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0-&gt;ipython&lt;8.0,&gt;=7.23.1-&gt;ipykernel-&gt;nbdev) (0.2.5)
+Requirement already satisfied: jupyter-console in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jupyter-&gt;nbdev) (6.4.0)
+Requirement already satisfied: qtconsole in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jupyter-&gt;nbdev) (5.3.0)
+Requirement already satisfied: notebook in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from jupyter-&gt;nbdev) (6.4.3)
+Requirement already satisfied: ipywidgets in /usr/local/lib/python3.9/site-packages (from jupyter-&gt;nbdev) (7.6.3)
+Requirement already satisfied: widgetsnbextension~=3.5.0 in /usr/local/lib/python3.9/site-packages (from ipywidgets-&gt;jupyter-&gt;nbdev) (3.5.1)
+Requirement already satisfied: jupyterlab-widgets&gt;=1.0.0 in /usr/local/lib/python3.9/site-packages (from ipywidgets-&gt;jupyter-&gt;nbdev) (1.0.0)
+Requirement already satisfied: Send2Trash&gt;=1.5.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from notebook-&gt;jupyter-&gt;nbdev) (1.8.0)
+Requirement already satisfied: argon2-cffi in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from notebook-&gt;jupyter-&gt;nbdev) (20.1.0)
+Requirement already satisfied: prometheus-client in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from notebook-&gt;jupyter-&gt;nbdev) (0.11.0)
+Requirement already satisfied: terminado&gt;=0.8.3 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from notebook-&gt;jupyter-&gt;nbdev) (0.11.0)
+Requirement already satisfied: cffi&gt;=1.0.0 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from argon2-cffi-&gt;notebook-&gt;jupyter-&gt;nbdev) (1.14.6)
+Requirement already satisfied: pycparser in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from cffi&gt;=1.0.0-&gt;argon2-cffi-&gt;notebook-&gt;jupyter-&gt;nbdev) (2.20)
+Requirement already satisfied: pyparsing&gt;=2.0.2 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from packaging-&gt;nbdev) (2.4.7)
+Requirement already satisfied: qtpy&gt;=2.0.1 in /usr/local/Cellar/jupyterlab/3.1.7/libexec/lib/python3.9/site-packages (from qtconsole-&gt;jupyter-&gt;nbdev) (2.1.0)
+<span class="ansi-yellow-fg">WARNING: You are using pip version 21.1.3; however, version 22.0.4 is available.
+You should consider upgrading via the &#39;/usr/local/Cellar/jupyterlab/3.1.7/libexec/bin/python3.9 -m pip install --upgrade pip&#39; command.</span>
+Note: you may need to restart the kernel to use updated packages.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This file will become your README and also the index of your documentation.</p>
@@ -57,7 +153,7 @@ nb_path: "index.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>./tetris.py &lt;input.txt &gt;output.txt</code></p>
+<p><code>./main.py &lt;input.txt &gt;output.txt</code></p>
 
 </div>
 </div>
@@ -83,12 +179,30 @@ nb_path: "index.ipynb"
 <div class="output_area">
 
 
-<div class="output_svg output_subarea output_execute_result">
-<svg baseProfile="full" height="100%" version="1.1" viewBox="0,0,800,450" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs /><rect fill="black" height="10" stroke="white" width="10" x="0" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="10" /></svg>
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;tetris.playfield.Playfield at 0x11162f6d0&gt;</pre>
 </div>
 
 </div>
 
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.imports</span> <span class="kn">import</span> <span class="n">IN_NOTEBOOK</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -135,6 +249,23 @@ nb_path: "index.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pf</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">pf</span>
 </pre></div>
@@ -149,8 +280,9 @@ nb_path: "index.ipynb"
 <div class="output_area">
 
 
-<div class="output_svg output_subarea output_execute_result">
-<svg baseProfile="full" height="100%" version="1.1" viewBox="0,0,800,450" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs /><rect fill="blue" height="10" stroke="white" width="10" x="0" y="200" /><rect fill="blue" height="10" stroke="white" width="10" x="10" y="200" /><rect fill="blue" height="10" stroke="white" width="10" x="20" y="200" /><rect fill="blue" height="10" stroke="white" width="10" x="30" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="200" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="190" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="10" /></svg>
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;tetris.playfield.Playfield at 0x11162f6d0&gt;</pre>
 </div>
 
 </div>
@@ -375,6 +507,76 @@ nb_path: "index.ipynb"
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x11162ebe0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x11162ebe0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x11162ebe0&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tetris.renderer</span> <span class="kn">import</span> <span class="n">Renderer</span>
+<span class="n">renderer</span> <span class="o">=</span> <span class="n">Renderer</span><span class="p">()</span>
+<span class="n">renderer</span><span class="o">.</span><span class="n">playfield_to_svg</span><span class="p">(</span><span class="n">pf</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_svg output_subarea output_execute_result">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" viewBox="0,0,300,450" width="100%"><defs/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="190"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="190"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="190"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="190"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="190"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="190"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="190"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="190"/><rect fill="#d1eaf3" height="10" rx="1" ry="1" stroke="#112543" width="10" x="80" y="190"/><rect fill="#d1eaf3" height="10" rx="1" ry="1" stroke="#112543" width="10" x="90" y="190"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="180"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="180"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="180"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="180"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="180"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="180"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="180"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="180"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="180"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="180"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="170"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="170"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="170"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="170"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="170"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="170"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="170"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="170"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="170"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="170"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="160"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="160"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="160"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="160"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="160"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="160"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="160"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="160"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="160"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="160"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="150"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="150"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="150"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="150"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="150"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="150"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="150"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="150"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="150"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="150"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="140"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="140"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="140"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="140"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="140"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="140"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="140"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="140"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="140"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="140"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="130"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="130"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="130"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="130"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="130"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="130"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="130"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="130"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="130"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="130"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="120"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="120"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="120"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="120"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="120"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="120"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="120"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="120"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="120"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="120"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="110"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="110"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="110"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="110"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="110"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="110"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="110"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="110"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="110"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="110"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="100"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="100"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="100"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="100"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="100"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="100"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="100"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="100"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="100"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="100"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="90"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="90"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="90"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="90"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="90"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="90"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="90"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="90"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="90"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="90"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="80"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="80"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="80"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="80"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="80"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="80"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="80"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="80"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="80"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="80"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="70"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="70"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="70"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="70"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="70"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="70"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="70"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="70"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="70"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="70"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="60"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="60"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="60"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="60"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="60"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="60"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="60"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="60"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="60"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="60"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="50"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="50"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="50"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="50"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="50"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="50"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="50"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="50"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="50"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="50"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="40"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="40"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="40"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="40"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="40"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="40"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="40"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="40"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="40"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="40"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="30"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="30"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="30"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="30"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="30"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="30"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="30"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="30"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="30"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="30"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="20"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="20"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="20"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="20"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="20"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="20"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="20"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="20"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="20"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="20"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="0" y="10"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="10" y="10"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="20" y="10"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="30" y="10"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="40" y="10"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="50" y="10"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="60" y="10"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="70" y="10"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="80" y="10"/><rect fill="white" height="10" rx="0" ry="0" stroke="#cccccc" width="10" x="90" y="10"/></svg>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -389,6 +591,42 @@ nb_path: "index.ipynb"
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116980a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116980a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116980a0&gt;</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -415,8 +653,89 @@ nb_path: "index.ipynb"
 <div class="output_area">
 
 
-<div class="output_svg output_subarea output_execute_result">
-<svg baseProfile="full" height="100%" version="1.1" viewBox="0,0,800,450" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs /><rect fill="blue" height="10" stroke="white" width="10" x="0" y="180" /><rect fill="blue" height="10" stroke="white" width="10" x="10" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="180" /><rect fill="blue" height="10" stroke="white" width="10" x="40" y="180" /><rect fill="blue" height="10" stroke="white" width="10" x="50" y="180" /><rect fill="blue" height="10" stroke="white" width="10" x="60" y="180" /><rect fill="blue" height="10" stroke="white" width="10" x="70" y="180" /><rect fill="blue" height="10" stroke="white" width="10" x="80" y="180" /><rect fill="blue" height="10" stroke="white" width="10" x="90" y="180" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="170" /><rect fill="blue" height="10" stroke="white" width="10" x="20" y="170" /><rect fill="blue" height="10" stroke="white" width="10" x="30" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="170" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="160" /><rect fill="blue" height="10" stroke="white" width="10" x="20" y="160" /><rect fill="blue" height="10" stroke="white" width="10" x="30" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="160" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="150" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="140" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="130" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="120" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="110" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="100" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="90" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="80" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="70" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="60" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="50" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="40" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="30" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="20" /><rect fill="black" height="10" stroke="white" width="10" x="0" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="10" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="20" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="30" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="40" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="50" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="60" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="70" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="80" y="10" /><rect fill="black" height="10" stroke="white" width="10" x="90" y="10" /></svg>
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116840a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116840a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116840a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116840a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116840a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116840a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116840a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>&lt;tetris.playfield.Playfield at 0x1116840a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;tetris.playfield.Playfield at 0x1116840a0&gt;</pre>
 </div>
 
 </div>
