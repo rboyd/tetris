@@ -38,19 +38,6 @@ nb_path: "index.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Install">Install<a class="anchor-link" href="#Install"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>poetry install</code></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="How-to-use">How to use<a class="anchor-link" href="#How-to-use"> </a></h2>
 </div>
 </div>
@@ -65,7 +52,30 @@ nb_path: "index.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The project is implemented as an <a href="https://github.com/fastai/nbdev">nbdev</a> notebook. Docs are generated from notebooks in literate programming fashion, tests are run against the notebook and CI executed in Github Actions.</p>
+<h2 id="Install-Optional-Dependencies">Install Optional Dependencies<a class="anchor-link" href="#Install-Optional-Dependencies"> </a></h2><p>The basic program should work without external dependencies. In order to execute Jupyter Notebook, work with renderer, etc:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>poetry install</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The project is implemented as an <a href="https://github.com/fastai/nbdev">nbdev</a> notebook. Docs are generated from notebooks in literate programming fashion best viewed on Github or in Jupyter Notebook.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Testing">Testing<a class="anchor-link" href="#Testing"> </a></h2><p>Tests are run against the notebooks and CI executed in Github Actions (<code>./.github/workflows</code>).</p>
+<p>Can be run from dev machine via:</p>
+<p>$ <code>nbdev_test_nbs</code></p>
 
 </div>
 </div>
