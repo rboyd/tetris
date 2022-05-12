@@ -21,7 +21,7 @@ class Renderer:
         dwg = svgwrite.Drawing()
         dwg.viewbox(0,0,300,250)
 
-        height = len(A)
+        height = max(20, min(len(A), max(pf.col_height)))
         width = len(A[0])
 
         # border around entire playfield

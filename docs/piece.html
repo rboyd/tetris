@@ -60,6 +60,79 @@ nb_path: "01_piece.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Instantiation-of-Pieces">Instantiation of Pieces<a class="anchor-link" href="#Instantiation-of-Pieces"> </a></h2><p>A piece is instantiated with a string representation describing which cells are populated (<code>*</code>) or not (any other character, but <code>-</code> by convention).</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q</span> <span class="o">=</span> <span class="n">Piece</span><span class="p">(</span><span class="s1">&#39;**</span><span class="se">\n</span><span class="s1">**&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Properties-and-Shape">Properties and Shape<a class="anchor-link" href="#Properties-and-Shape"> </a></h2><p>The basic properties of a piece describe it's shape. <code>height</code> and <code>width</code> are obvious, <code>top_cell</code> and <code>bottom_cell</code> hold the zero-indexed height of the top-most or bottom-most cell for a given column.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">height</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">width</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span> <span class="o">==</span> <span class="p">[[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">]])</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">bottom_cell</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">top_cell</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">Piece</span><span class="p">(</span><span class="s1">&#39;**-</span><span class="se">\n</span><span class="s1">-**&#39;</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">height</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">width</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">bottom_cell</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">top_cell</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
 
 

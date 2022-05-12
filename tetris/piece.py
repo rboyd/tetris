@@ -12,14 +12,14 @@ class Piece:
         srows = rep.split('\n')
         self._height = len(srows)
         self._width = len(srows[0])
-        self._ceil = [-1] * self._width
-        self._floor = [inf] * self._width
+        self._top_cell = [-1] * self._width
+        self._bottom_cell = [inf] * self._width
         for i, line in enumerate(reversed(srows)):
             row = [True if ch == '*' else False for ch in line]
             for j, col in enumerate(row):
                 if col:
-                    self._ceil[j] = i
-                    self._floor[j] = min(self._floor[j], i)
+                    self._top_cell[j] = i
+                    self._bottom_cell[j] = min(self._bottom_cell[j], i)
             self.arr.append(row)
 
     @property
@@ -27,14 +27,14 @@ class Piece:
         return self._height
 
     @property
-    def num_cols(self) -> int:
+    def width(self) -> int:
         return len(self.arr[0])
 
     def toarray(self) -> [[bool]]:
         return self.arr
 
-    def ceil(self, col:int) -> int:
-        return self._ceil[col]
+    def top_cell(self, col:int) -> int:
+        return self._top_cell[col]
 
-    def floor(self, col:int) -> int:
-        return self._floor[col]
+    def bottom_cell(self, col:int) -> int:
+        return self._bottom_cell[col]

@@ -7,7 +7,7 @@ from math import inf
 from .piece import Piece
 
 class Playfield:
-    def __init__(self, rows:int = 20, cols:int = 10):
+    def __init__(self, rows: int = 100, cols: int = 10):
         self._rows = rows
         self._cols = cols
         self._playfield = [[None] * cols for _ in range(rows)]
@@ -26,7 +26,7 @@ class Playfield:
         return max(height+1 for height in self._column_height)
 
     def add(self, piece:Piece, col:int) -> int:
-        "Add the given piece to the playfield. It settles at the highest point of first contact."
+        """Add the given piece to the playfield. It settles at the highest point of first contact."""
 
         # Determine the row of the playfield where the bottom row of the piece
         # will land. If there are no populated blocks on the playfield then the
@@ -34,16 +34,14 @@ class Playfield:
         # it is the highest point of collision.
         resting_row = 0
 
-        for i in range(piece.num_cols):
+        for i in range(piece.width):
             if self._column_height[col+i] < 0:
                 resting_row = max(resting_row, 0)
                 continue
 
-            #print(f'{i}: self._column_height[col+i]: {self._column_height[col+i]} piece.floor({i}): {piece.floor(i)}')
-            collision_height = (self._column_height[col+i] + 1) - piece.floor(i)
+            collision_height = (self._column_height[col+i] + 1) - piece.bottom_cell(i)
             resting_row = max(resting_row, collision_height)
-            #print(f'col_height: {collision_height} resting_row: {resting_row}')
-        #print('resting_row:', resting_row)
+
         A = piece.toarray()
 
         self._num_added += 1
@@ -51,12 +49,11 @@ class Playfield:
             for j, pcol in enumerate(prow):
                 if pcol:
                     self._playfield[resting_row+i][col+j] = self._num_added
-                    self._column_height[col+j] = resting_row + piece.ceil(j)
-        #print(self._column_height)
+                    self._column_height[col+j] = resting_row + piece.top_cell(j)
         return resting_row
 
     def clear(self, bottom_row:int, num_rows: int) -> int:
-        "Clears any full rows, adjusting column heights. Returns number of cleared rows."
+        """Clears any full rows, adjusting column heights. Returns number of cleared rows."""
         top_row = bottom_row + num_rows
         cur_row = bottom_row
         cleared_lines = 0
@@ -72,6 +69,6 @@ class Playfield:
         return cleared_lines
 
     def add_with_clear(self, piece:Piece, col:int) -> int:
-        "Adds a piece at [col] and potentially clears any effected rows."
+        """Adds a piece at [col] and potentially clears any effected rows."""
         resting_row = self.add(piece, col)
         return self.clear(resting_row, piece.height)
