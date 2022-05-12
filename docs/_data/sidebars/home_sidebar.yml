@@ -11,6 +11,9 @@ entries:
       url: /
     - output: web,pdf
       title: Title
+      url: controller.html
+    - output: web,pdf
+      title: Pieces are uniquely colored
       url: renderer.html
     output: web
     title: tetris

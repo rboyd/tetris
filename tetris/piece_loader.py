@@ -15,6 +15,10 @@ class PieceLoader:
                 with open(f, 'r') as inf:
                     data = inf.read()
                     self._pieces[filename] = Piece(data)
+
+    def __getitem__(self, item):
+         return self._pieces[item]
+
     @property
     def pieces(self):
         return self._pieces

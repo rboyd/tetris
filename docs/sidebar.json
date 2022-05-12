@@ -1,6 +1,7 @@
 {
   "tetris": {
     "Overview": "/",
-    "Title": "renderer.html"
+    "Title": "controller.html",
+    "Pieces are uniquely colored": "renderer.html"
   }
 }

@@ -12,6 +12,7 @@ class Playfield:
         self._cols = cols
         self._playfield = [[None] * cols for _ in range(rows)]
         self._column_height = [-1] * cols
+        self._num_added = 0
 
     def toarray(self) -> [[bool]]:
         return self._playfield
@@ -45,10 +46,11 @@ class Playfield:
         #print('resting_row:', resting_row)
         A = piece.toarray()
 
+        self._num_added += 1
         for i, prow in enumerate(A):
             for j, pcol in enumerate(prow):
                 if pcol:
-                    self._playfield[resting_row+i][col+j] = True
+                    self._playfield[resting_row+i][col+j] = self._num_added
                     self._column_height[col+j] = resting_row + piece.ceil(j)
         #print(self._column_height)
         return resting_row

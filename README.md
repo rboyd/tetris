@@ -2,11 +2,6 @@
 > Simplified Tetris engine.
 
 
-```python
-%%capture
-%pip install nbdev
-```
-
 Objects to simulate some primitive operations in the game of Tetris.
 
 ## Install
@@ -47,7 +42,7 @@ rndr.playfield_to_svg(pf)
 
 
     
-![svg](docs/images/output_12_0.svg)
+![svg](docs/images/output_11_0.svg)
     
 
 
@@ -65,7 +60,7 @@ rndr.piece_to_svg(i)
 
 
     
-![svg](docs/images/output_14_0.svg)
+![svg](docs/images/output_13_0.svg)
     
 
 
@@ -79,7 +74,7 @@ rndr.playfield_to_svg(pf)
 
 
     
-![svg](docs/images/output_15_0.svg)
+![svg](docs/images/output_14_0.svg)
     
 
 
@@ -117,7 +112,7 @@ for name, piece in loader.pieces.items():
 
 
     
-![svg](docs/images/output_19_1.svg)
+![svg](docs/images/output_18_1.svg)
     
 
 
@@ -126,7 +121,7 @@ for name, piece in loader.pieces.items():
 
 
     
-![svg](docs/images/output_19_3.svg)
+![svg](docs/images/output_18_3.svg)
     
 
 
@@ -135,7 +130,7 @@ for name, piece in loader.pieces.items():
 
 
     
-![svg](docs/images/output_19_5.svg)
+![svg](docs/images/output_18_5.svg)
     
 
 
@@ -144,7 +139,7 @@ for name, piece in loader.pieces.items():
 
 
     
-![svg](docs/images/output_19_7.svg)
+![svg](docs/images/output_18_7.svg)
     
 
 
@@ -153,7 +148,7 @@ for name, piece in loader.pieces.items():
 
 
     
-![svg](docs/images/output_19_9.svg)
+![svg](docs/images/output_18_9.svg)
     
 
 
@@ -162,7 +157,7 @@ for name, piece in loader.pieces.items():
 
 
     
-![svg](docs/images/output_19_11.svg)
+![svg](docs/images/output_18_11.svg)
     
 
 
@@ -171,7 +166,7 @@ for name, piece in loader.pieces.items():
 
 
     
-![svg](docs/images/output_19_13.svg)
+![svg](docs/images/output_18_13.svg)
     
 
 
@@ -193,19 +188,19 @@ pf = c.process('I0,I4,Q8', rndr)
 
 
     
-![svg](docs/images/output_23_0.svg)
+![svg](docs/images/output_22_0.svg)
     
 
 
 
     
-![svg](docs/images/output_23_1.svg)
+![svg](docs/images/output_22_1.svg)
     
 
 
 
     
-![svg](docs/images/output_23_2.svg)
+![svg](docs/images/output_22_2.svg)
     
 
 
@@ -219,19 +214,19 @@ pf = c.process('T1,Z3,I4', rndr)
 
 
     
-![svg](docs/images/output_25_0.svg)
+![svg](docs/images/output_24_0.svg)
     
 
 
 
     
-![svg](docs/images/output_25_1.svg)
+![svg](docs/images/output_24_1.svg)
     
 
 
 
     
-![svg](docs/images/output_25_2.svg)
+![svg](docs/images/output_24_2.svg)
     
 
 
@@ -247,49 +242,49 @@ pf = c.process('Q0,I2,I6,I0,I6,I6,Q2,Q4', Renderer())
 
 
     
-![svg](docs/images/output_28_0.svg)
+![svg](docs/images/output_27_0.svg)
     
 
 
 
     
-![svg](docs/images/output_28_1.svg)
+![svg](docs/images/output_27_1.svg)
     
 
 
 
     
-![svg](docs/images/output_28_2.svg)
+![svg](docs/images/output_27_2.svg)
     
 
 
 
     
-![svg](docs/images/output_28_3.svg)
+![svg](docs/images/output_27_3.svg)
     
 
 
 
     
-![svg](docs/images/output_28_4.svg)
+![svg](docs/images/output_27_4.svg)
     
 
 
 
     
-![svg](docs/images/output_28_5.svg)
+![svg](docs/images/output_27_5.svg)
     
 
 
 
     
-![svg](docs/images/output_28_6.svg)
+![svg](docs/images/output_27_6.svg)
     
 
 
 
     
-![svg](docs/images/output_28_7.svg)
+![svg](docs/images/output_27_7.svg)
     
 
 

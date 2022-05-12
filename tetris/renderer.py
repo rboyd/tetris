@@ -5,10 +5,16 @@ __all__ = ['Renderer']
 # Cell
 from .piece import Piece
 from .playfield import Playfield
-import svgwrite
 from IPython.display import SVG
+import svgwrite, colorsys, webcolors
 
 class Renderer:
+    def darken(self, hex_rgb: str, amount: float) -> str:
+        rgb = webcolors.hex_to_rgb(hex_rgb)
+        hls = colorsys.rgb_to_hls(rgb[0]/255, rgb[1]/255, rgb[2]/255)
+        darkened_rgb = colorsys.hls_to_rgb(hls[0], max(0, min(1, amount * hls[1])), hls[2])
+        return webcolors.rgb_to_hex(tuple([int(el * 255) for el in darkened_rgb]))
+
     def playfield_to_svg(self, pf: Playfield) -> SVG:
         A = pf.toarray()
         side_len = 10
@@ -29,7 +35,10 @@ class Renderer:
                 fill = 'white'
                 corner_radius = 0
                 if A[row][col]:
-                    stroke, fill = '#112543', '#d1eaf3'
+                    piece_num = A[row][col]
+                    base_fill = '#d1eaf3'
+                    fill = self.darken(base_fill, 1 - (piece_num-1) * 0.2)
+                    stroke = '#112543'
                     corner_radius = 1
                 dwg.add(dwg.rect(left_top, width_height, stroke=stroke, fill=fill, rx=corner_radius, ry=corner_radius))
         return SVG(dwg.tostring())
